@@ -6,10 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-#app{
-display: "none";
 
-}
 /* HOVER EFFECTS  */
 .material-symbols-outlined {
   padding: 10px;
@@ -86,20 +83,9 @@ nav {
 input:focus {
   outline: none;
 }
-.profile-actions-area{
-  display: flex;
-}
 
-.profile-actions-area .tooltip{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .search-area span {
   margin-left: 10px;
-}
-.auth-user{
-  cursor: pointer;
 }
 
 /* MAIN SECTION STYLES */
@@ -111,6 +97,7 @@ input:focus {
   top: 64px;
   display: flex;
   flex-direction: column;
+  margin-left: 18px;
   margin-top: 5px;
   color: #5f6368;
   width: 80px;
@@ -123,6 +110,8 @@ input:focus {
     0 2px 6px 2px rgba(60, 64, 67, 0.149);
     background: white;
 }
+
+
 .active {
   background-color: #fef0c3;
   border-radius: 50%;
@@ -133,7 +122,7 @@ input:focus {
 }
 
 .sidebar .sidebar-item {
-  padding: 3px 0;
+  padding: 3px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -147,13 +136,19 @@ input:focus {
   width: 250px;
 }
 
+.sidebar-item:nth-child(1) {
+  margin-top: 5px;
+}
+
+.sidebar-active-item{
+  background-color: #fef0c3;
+
+}
+
 .sidebar-item .material-symbols-outlined {
   margin-left: 18px; 
 }
 
-.sidebar-item:nth-child(1) {
-  margin-top: 5px;
-}
 
 .sidebar-item:hover {
   background: #f1f3f4;
